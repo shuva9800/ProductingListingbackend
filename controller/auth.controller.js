@@ -58,8 +58,7 @@ exports.loginHandler = async (req,res)=>{
                 message: "user nor register go to signin page"
             })
         }
-      
-        console.log(person)
+
         //password matching
         if(password === person.password){
             return res.status(200).json({
