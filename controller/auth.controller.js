@@ -55,7 +55,7 @@ exports.loginHandler = async (req,res)=>{
         if(!person){
             return res.status(404).json({
                 success: false,
-                message: "user nor register go to signin page"
+                message: "user not register go to signin page"
             })
         }
 
